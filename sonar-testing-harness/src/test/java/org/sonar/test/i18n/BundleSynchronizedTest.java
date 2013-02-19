@@ -44,7 +44,6 @@ public class BundleSynchronizedTest {
     matcher = new BundleSynchronizedMatcher();
   }
 
-  @Test
   // The case of a Sonar Language Pack that translates the Core bundles
   public void shouldMatchBundlesOfLanguagePack() {
     // synchronized bundle
@@ -89,7 +88,6 @@ public class BundleSynchronizedTest {
     }
   }
 
-  @Test
   public void testGetBundleFileFromGithub() throws Exception {
     matcher = new BundleSynchronizedMatcher(null, GITHUB_RAW_TESTING_FILE_PATH);
     matcher.getBundleFileFromGithub("core.properties");
